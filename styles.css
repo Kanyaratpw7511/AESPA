@@ -1,0 +1,248 @@
+:root {
+    --primary : #9E0000;
+    --primary-dark: #770000;
+    --secondary : #EF4444;
+    --secondary-dark : #530202;
+    --bg-dark : #0D0909;
+    --text-muted :#828282;
+    --border-soft :#CFCFCF;
+    --radius-card: 16px;
+    --shadow-soft: 0 10px 30px rgba(15, 23, 42, 0.08);
+    --max-width: 1080px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html, body,section {
+    font-family: 'Prompt', sans-serif;
+    color: white;
+    background: var(--bg-dark);
+    line-height: 1.6;
+}
+
+.container {
+    width: 100%;
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 200px;
+
+}
+
+.contriner-right {
+    display: flex;
+    align-items: center;
+    justify-items: flex-end;
+    position: right;
+    padding: 16px;
+    gap: 28px;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+.logo-icon {
+    width: 50px;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 40;
+    background: #fff;
+    border-bottom: 1px solid var(--border-soft);
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4px 16px;
+    gap: 8px;
+}
+
+.Logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.logo-name {
+    color: black;
+}
+
+.nav-link {
+    display: flex;
+    gap: 24px;
+    font-size: 14px;
+    color: var(--text-muted);
+}
+
+.nav-link :hover {
+    color: black
+}
+
+.btn-top {
+    border: none;
+    border-radius: 8px;
+    padding: 8px 16px;
+    font-size: 14px;
+    cursor: pointer;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    white-space: nowrap;
+    color: white;
+    background-color: var(--primary);
+}
+
+.btn-top:hover {
+    background-color: var(--primary-dark);
+    color: white;
+}
+
+/* Hero */
+.head-text {
+    text-align: center;
+    gap: 50px;
+    margin-bottom: 24px;
+}
+
+.Hero {
+    padding: 24px 0;
+    margin-top: 50px;
+}
+
+.btn-hero {
+    border: none;
+    border-radius: 8px;
+    padding: 8px 16px;
+    font-size: 14px;
+    cursor: pointer;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    white-space: nowrap;
+    color: white;
+    background-color: var(--secondary);
+}
+
+.btn-hero:hover {
+    background-color: var(--primary-dark);
+    color: white;
+}
+
+.title {
+    font-size: 32px;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.description {
+    font-size: 16px;
+    color: white;
+    margin-bottom: 8px;
+}
+
+/* abot */
+
+.abot-position {
+    display: flex;
+    gap: 50px;
+    margin-bottom: 8px;
+}
+
+.abot-img {
+    max-width: 300px;
+    height: auto;
+}
+
+.caption {
+    color: var(--text-muted);
+    font-size: 14px;
+}
+
+.description-abot {
+    color: white;
+    font-size: 14px;
+}
+
+/* Album */
+
+.content-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 40px auto;
+    align-items: center;
+    order: -1;
+}
+
+.text-content {
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+
+.description-album {
+    font-size: 14px;
+    color: white;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+}
+
+/* footer */
+
+.captaine-footer {
+    position: sticky;
+    padding: 24px;
+    background: white;
+    color: black;
+}
+
+.footer-position {
+    justify-content: space-between;
+    display: flex;
+    gap: 20px;
+}
+
+.Logo-footer {
+    max-width: 150px;
+    gap: 24px;
+}
+
+.footer-col {
+    padding: 16px;
+}
+
+li {
+    list-style: none;
+    gap: 24px;
+}
+
+.copy-ight {
+    text-align: center;
+    font-size: 14px;
+    padding: 8px;
+    color: black;
+    background: white;
+}
